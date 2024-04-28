@@ -16,11 +16,11 @@ class CLIApplet:
     def run(self):
         print("Welcome to Text Classifier CLI Applet!")
         print("Available actions:")
-        print("1. Evaluation")
+        print("1. Evaluation of Graph Based Method")
         print("2. Visualization of a graph")
         print("3. Visualization of MCS of two graphs")
-        print("4. Vector-Based Classification (Naive Bayes)")
-        print("5. Vector-Based Classification (SVM) Results:")
+        print("4. Vector-Based Classification (Naive Bayes) Results")
+        print("5. Vector-Based Classification (SVM) Results")
         
         print("6. Exit")
 
