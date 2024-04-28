@@ -2,6 +2,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 import matplotlib.pyplot as plt
 import numpy as np
 import math
+
 class Evaluator:
     def __init__(self) -> None:
         pass
@@ -11,7 +12,7 @@ class Evaluator:
         precision = precision_score(true_labels, predicted_labels, average='weighted')
         recall = recall_score(true_labels, predicted_labels, average='weighted')
         f1 = f1_score(true_labels, predicted_labels, average='weighted')
-        return math.ceil(accuracy*100), math.ceil(precision*100), math.ceil(recall*100), f1
+        return accuracy, precision, recall, f1
 
     def plot_confusion_matrix(self, true_labels, predicted_labels, classes):
         cm = confusion_matrix(true_labels, predicted_labels, labels=classes)
